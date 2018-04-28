@@ -13,7 +13,7 @@ export default class Footer extends Component{
       <View style={styles.footerHolder}>
         <Icon name="md-person" size={25} color='#000' style={styles.footerIcon} />
         <Icon name="ios-basket" size={25} color='#000' style={styles.footerIcon} />
-        <Icon name="ios-search" size={27} color='#000' style={styles.footerIcon} />
+        <Icon name="ios-search" size={25} color='#000' style={styles.footerIcon} />
         <Icon name="md-home" size={25} color='#000' style={styles.footerIcon} />  
       </View>
     )

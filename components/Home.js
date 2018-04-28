@@ -18,8 +18,12 @@ export default class Home extends Component{
           <View style={styles.restaurant}>
             <View style={styles.restaurantImage}>
             <Image
+              source={require('../assets/images/maeda_restaurant_cover.png')}
               resizeMode={'cover'}
-              style={{ width: '100%', height: 150 }}
+              style={{ width: '100%', height: 150, zIndex: 1, position: 'absolute' }} />
+            <Image
+              resizeMode={'cover'}
+              style={{ width: '100%', height: 150, position: 'absolute', zIndex: 2 }}
               source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZJzFcoaiWld9eMCSzagVrfCUWxkWJblpEs1NgRuYKExd2FMUkA'}}
             />
             </View>
@@ -44,8 +48,12 @@ export default class Home extends Component{
           <View style={styles.restaurant}>
             <View style={styles.restaurantImage}>
             <Image
+              source={require('../assets/images/maeda_restaurant_cover.png')}
               resizeMode={'cover'}
-              style={{ width: '100%', height: 150 }}
+              style={{ width: '100%', height: 150, zIndex: 1, position: 'absolute' }} />
+            <Image
+              resizeMode={'cover'}
+              style={{ width: '100%', height: 150, position: 'absolute', zIndex: 2 }}
               source={{uri: 'https://www.mercolocal.com/Assets/Images/Merchants/9037/Full%20Header/Large/Merchant_Pizza_Hut_-_Cornelia_Pizzaria_Cornelia_Georgia_Food_And_Dining_Banner_051020171002.jpg'}}
             />
             </View>
@@ -69,8 +77,12 @@ export default class Home extends Component{
           <View style={styles.restaurant}>
             <View style={styles.restaurantImage}>
             <Image
+              source={require('../assets/images/maeda_restaurant_cover.png')}
               resizeMode={'cover'}
-              style={{ width: '100%', height: 150 }}
+              style={{ width: '100%', height: 150, zIndex: 1, position: 'absolute' }} />
+            <Image
+              resizeMode={'cover'}
+              style={{ width: '100%', height: 150, position: 'absolute', zIndex: 2 }}
               source={{uri: 'https://d701vexhkz032.cloudfront.net/media/images/promotion-pill/banner_web_guacamole-min_new.jpg'}}
             />
             </View>
@@ -108,7 +120,7 @@ const styles = StyleSheet.create({
   },
   restaurantImage:{
     backgroundColor: '#ddd',
-    height: 150,
+    height: 150
   },
   detailsHolder:{
     flex: 1,
@@ -135,7 +147,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   heart:{
-    position: 'absolute', top: 15, right: 15,
+    position: 'absolute',
+    top: 15,
+    right: 15,
     zIndex: 1,
     opacity: 0.9,
     fontSize: 22
